@@ -42,7 +42,7 @@ app.get('/api/candidates', (req, res) => {
 });
 
   // GET a single candidate
-  app.get('/api/candidates/:id', (req,res) => {
+  app.get('/api/candidate/:id', (req,res) => {
     const sql = `SELECT candidates.*, parties.name 
              AS party_name 
              FROM candidates 
